@@ -12,3 +12,5 @@ Engage with other community members.
 Welcome others and are open-minded. Remember that this is a community we
 build together 💪.
 To get started, click here : 
+
+https://github.com/Shazisaremi/BDA601/discussions
