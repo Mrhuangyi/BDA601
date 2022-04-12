@@ -1,3 +1,4 @@
+# K-Means Clustering Sample
 
 Let's see Just how easy it is to do k-means clustering, using scikit-learn and python. So the first thing I'm going to do is create some random data that I want to try to Cluster and just to make it easier. I'm going to actually build some clusters into my fake test data. So let's pretend There's some real fundamental relationship between these data. And there are some real natural clusters that exist in it. 
 
