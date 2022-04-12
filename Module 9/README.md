@@ -1,6 +1,8 @@
 
 Let's see Just how easy it is to do k-means clustering, using scikit-learn and python. So the first thing I'm going to do is create some random data that I want to try to Cluster and just to make it easier. I'm going to actually build some clusters into my fake test data. So let's pretend There's some real fundamental relationship between these data. And there are some real natural clusters that exist in it. 
 
+![](1.png)
+
 So to do that, I just wrote this little create clustered data function in Python, and it starts off with a consistent random seed, so you'll get the same result every time. And it takes in, I want to create clusters of n people in K clusters. So it figures out how many points per cluster that works out to first and then builds up this list X that starts off empty. So for each cluster for I in range K, I'm going to create some random centroid of income between 20,000 and 200,000 dollars and some random centroid of a tree between the age of 20 and 70. So what I'm doing here is creating some fake as fake scatter plot, that will show income versus age for n people in K clusters. So for each random centroid that I created, I'm then going to create a normally distributed set of random data, with a standard deviation of 10 thousand in income and a standard deviation of 2 in age. And that will give me back a bunch of age income data that is clustered into some pre pre existing clusters that I chose at random. Okay, let's go ahead and run that. 
  
 And now to actually do k-means you'll see how easy it is. All you need to do is import k-means from scikit-learn cluster package, and we're also going to import matplotlib, so we can visualize things and also the scale things. So we can take a look at how that works in a minute.
