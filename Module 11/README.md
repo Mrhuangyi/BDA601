@@ -3,7 +3,7 @@
 
 Let’s define a social network first before we dive into the concept of link prediction.
 
-A social network is essentially a representation of the relationships between social entities, such as people, organizations, governments, political parties, etc.
+** A social network is essentially a representation of the relationships between social entities, such as people, organizations, governments, political parties, etc.**
 
 The interactions among these entities generate unimaginable amounts of data in the form of posts, chat messages, tweets, likes, comments, shares, etc. This opens up a window of opportunities and use cases we can work on.
 
