@@ -1,6 +1,8 @@
 
 # An Overview of Social Network Analytics
 
+![](Social_Network.jpg)
+
 Let’s define a social network first before we dive into the concept of link prediction.
 
 **A social network is essentially a representation of the relationships between social entities, such as people, organizations, governments, political parties, etc.**
