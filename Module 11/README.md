@@ -1,5 +1,6 @@
+# Graph Analyze
 
-# An Overview of Social Network Analytics
+## An Overview of Social Network Analytics
 
 ![](Social_Network.jpg)
 
@@ -17,3 +18,7 @@ The benefits of social network analytics can be highly rewarding. Here are a few
 - Used for customer segmentation
 - Used to design Recommendation Systems
 - Detect fake news, among other things
+
+graph data structure enables us to observe data from unique angles, which is why graph data science is used in every field from molecular biology to the social sciences:
+
+![](Graph.png)
