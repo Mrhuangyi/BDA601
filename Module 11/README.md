@@ -22,3 +22,7 @@ The benefits of social network analytics can be highly rewarding. Here are a few
 graph data structure enables us to observe data from unique angles, which is why graph data science is used in every field from molecular biology to the social sciences:
 
 ![](Graph.png)
+
+### Sources
+- https://www.analyticsvidhya.com/blog/2020/01/link-prediction-how-to-predict-your-future-connections-on-facebook/
+- https://www.toptal.com/data-science/graph-data-science-python-networkx
