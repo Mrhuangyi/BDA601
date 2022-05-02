@@ -39,5 +39,5 @@ Traditional data security is network- and system-centric, but today's multi-clou
 
 - You must measure and communicate the status of big data privacy risk indicators as a critical part of tracking success in protecting sensitive information while supporting audit readiness.
 
-# Sources
+# Source
 https://www.informatica.com/in/resources/articles/what-is-big-data-privacy.html
