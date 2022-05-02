@@ -38,3 +38,6 @@ Traditional data security is network- and system-centric, but today's multi-clou
 - You need fast and efficient data protection capabilities at scale, including dynamic masking for big data as it's put into use in production and data lakes, encryption for big data at rest in data lakes and data warehouses, and persistent masking for big data used in non-production environments like development and analytics.
 
 - You must measure and communicate the status of big data privacy risk indicators as a critical part of tracking success in protecting sensitive information while supporting audit readiness.
+
+# Sources
+https://www.informatica.com/in/resources/articles/what-is-big-data-privacy.html
