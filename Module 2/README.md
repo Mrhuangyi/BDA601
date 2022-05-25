@@ -1,6 +1,28 @@
 # Pymongo
 This Module is intended as an introduction to working with MongoDB and PyMongo.
 
+## Installation
+PyMongo can be installed with pip:
+
+```
+$ python -m pip install pymongo
+```
+
+Or easy_install from setuptools:
+
+```
+$ python -m easy_install pymongo
+```
+
+You can also download the project source and do:
+
+```
+$ python setup.py install
+```
+
+> **Do not** install the “bson” package from pypi. PyMongo comes with its own bson package; doing “easy_install bson” installs a third-party package that is incompatible with PyMongo.
+
+
 ## Prerequisites
 Before we start, make sure that you have the PyMongo distribution installed. In the Python shell, the following should run without raising an exception:
 
