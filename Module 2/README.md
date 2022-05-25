@@ -8,8 +8,7 @@ Before we start, make sure that you have the PyMongo distribution installed. In 
 >>> import pymongo
 ```
 
-This tutorial also assumes that a MongoDB instance is running on the default host and port. Assuming you have [downloaded and installed MongoDB](https://github.com/Shazisaremi/Installations/blob/main/pymongo/README.md){:target="\_blank"}.
-<a href="https://github.com/Shazisaremi/Installations/blob/main/pymongo/README.md" target="_blank">downloaded and installed MongoDB</a>
+This tutorial also assumes that a MongoDB instance is running on the default host and port. Assuming you have [downloaded and installed MongoDB](https://github.com/Shazisaremi/Installations/blob/main/pymongo/README.md)
 
 ## Making a Connection with MongoClient
 The first step when working with **PyMongo** is to create a MongoClient to the running mongod instance. Doing so is easy:
