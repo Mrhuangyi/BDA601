@@ -20,7 +20,7 @@ You can also download the project source and do:
 $ python setup.py install
 ```
 
-> **Do not** install the “bson” package from pypi. PyMongo comes with its own bson package; doing “easy_install bson” installs a third-party package that is incompatible with PyMongo.
+> **Note:** Do not install the “bson” package from pypi. PyMongo comes with its own bson package; doing “easy_install bson” installs a third-party package that is incompatible with PyMongo.
 
 
 ## Prerequisites
