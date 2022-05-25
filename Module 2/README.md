@@ -128,3 +128,60 @@ The most basic type of query that can be performed in MongoDB is find_one(). Thi
 The result is a dictionary matching the one that we inserted previously.
 
 > **Note:** The returned document contains an `"_id"`, which was automatically added on insert.
+
+`find_one()` also supports querying on specific elements that the resulting document must match. To limit our results to a document with author “Mike” we do:
+
+```
+>>> pprint.pprint(posts.find_one({"author": "Mike"}))
+{u'_id': ObjectId('...'),
+ u'author': u'Mike',
+ u'date': datetime.datetime(...),
+ u'tags': [u'mongodb', u'python', u'pymongo'],
+ u'text': u'My first blog post!'}
+ ```
+If we try with a different author, like “Eliot”, we’ll get no result:
+
+```
+>>> posts.find_one({"author": "Eliot"})
+```
+
+
+## Querying By ObjectId
+We can also find a post by its _id, which in our example is an ObjectId:
+```
+>>> post_id
+ObjectId(...)
+>>> pprint.pprint(posts.find_one({"_id": post_id}))
+{u'_id': ObjectId('...'),
+ u'author': u'Mike',
+ u'date': datetime.datetime(...),
+ u'tags': [u'mongodb', u'python', u'pymongo'],
+ u'text': u'My first blog post!'}
+ ```
+Note that an ObjectId is not the same as its string representation:
+
+```
+>>> post_id_as_str = str(post_id)
+>>> posts.find_one({"_id": post_id_as_str}) # No result
+>>>
+```
+
+
+## Inserting many Documents
+`insert_many()` This method is used to insert multiple entries in a collection or the database in MongoDB. The parameter of this method is a list that contains dictionaries of the data that we want to insert in the collection.
+
+This is faster and more straightforward than calling `.insert_one()` multiple times. The call to `.insert_many()` takes an iterable of documents and inserts them into the tutorial collection in your rptutorials database.
+
+```
+>>> post_2 = {"author": "Leo",
+        "text": "Fasting 14-10",
+        "tags": ["python", "pymongo", "django"],
+        "date": datetime.datetime.utcnow()}
+
+>>> post_3 = {"author": "Jack",
+        "text": "Fastest Car",
+        "tags": ["mongodb", "python", "pyspark"],
+        "date": datetime.datetime.utcnow()}
+        
+>>> new_result = collection.insert_many([item2, item3])
+```
