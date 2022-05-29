@@ -235,3 +235,20 @@ Since in your example the expression is 1, it will aggregate a value of one for 
 
 `$sort` Sorts all input documents and returns them to the pipeline in sorted order.
 The `$sort` stage has the following prototype form:
+
+![](assets/carbon%20(5).png)
+
+`$sort` takes a document that specifies the field(s) to sort by and the respective sort order. `<sort order>` can have one of the following values:
+
+| Value       | Description|
+|:------------|:-----------|
+|`1`        | Sort ascending. |
+|`-1`       | Sort descending.|
+
+If sorting on multiple fields, sort order is evaluated from **left to right**. For example, in the form above, documents are first sorted by `<field1>`. Then documents with the same `<field1>` values are further sorted by `<field2>`.
+
+### Example
+
+The following command uses the `$sort` stage to sort on the `count` and `_id` field:
+![](assets/carbon%20(6).png)
+
