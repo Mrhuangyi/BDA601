@@ -185,3 +185,53 @@ This is faster and more straightforward than calling `.insert_one()` multiple ti
         
 >>> new_result = collection.insert_many([item2, item3])
 ```
+
+## $unwind (aggregation)
+### Definition
+`$unwind`
+Deconstructs an array field from the input documents to output a document for each element. Each output document is the input document with the value of the array field replaced by the element.
+
+### Examples 
+create a sample collection named **inventory** with the following document:
+
+![](assets/carbon.png)
+
+The following aggregation uses the `$unwind` stage to output a document for each element in the `sizes` array:
+
+![](assets/carbon%20(1).png)
+
+The operation returns the following results:
+
+![](assets/carbon%20(2).png)
+
+Each document is identical to the input document except for the value of the `sizes` field which now holds a value from the original `sizes` array.
+
+## $group (aggregation)
+### Definition
+
+`$group` Groups input documents by the specified `_id` expression and for each distinct grouping, outputs a document. The `_id` field of each output document contains the unique group by value. The output documents can also contain computed fields that hold the values of some **accumulator expression**.
+
+> **Note :** 
+> 
+> $group does not order its output documents.
+
+The `$group` stage has the following prototype form: 
+
+![](assets/carbon%20(3).png)
+
+
+| Field       | Description|
+|:------------|:-----------|
+|`_id`        | Required. If you specify an `_id` value of null, or any other constant value, the `$group` stage calculates accumulated values for all the input documents as a whole.|
+|`field`      | *Optional*. Computed using the accumulator operators.|
+
+The `_id` and the **accumulator operators** can accept any valid `expression`.
+
+![](assets/carbon%20(4).png)
+Since in your example the expression is 1, it will aggregate a value of one for each document in the group, thus yielding the total number of documents per group.
+
+## $sort (aggregation)
+### Definition
+
+`$sort` Sorts all input documents and returns them to the pipeline in sorted order.
+The `$sort` stage has the following prototype form:
