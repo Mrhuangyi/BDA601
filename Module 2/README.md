@@ -18,6 +18,10 @@ The information in MongoDB is stored in **documents**. Here, a document is analo
 These documents are stored in a *collection*. A collection is literally a collection of documents in MongoDB. This is analogous to *tables* in traditional databases.
 
 <p align="center">
+<img src="assets/mongodb-nosql-working%20(1).jpg"/>
+</p>
+
+<p align="center">
 <img src="assets/Screenshot-from-2020-02-19-14-20-52-1-850x376.png"/>
 </p>
 
