@@ -35,7 +35,7 @@ This tutorial also assumes that a MongoDB instance is running on the default hos
 ## Making a Connection with MongoClient
 The first step when working with **PyMongo** is to create a MongoClient to the running mongod instance. Doing so is easy:
 
-```
+```python
 >>> from pymongo import MongoClient
 >>> client = MongoClient()
 ```
