@@ -26,7 +26,7 @@ $ python setup.py install
 ## Prerequisites
 Before we start, make sure that you have the PyMongo distribution installed. In the Python shell, the following should run without raising an exception:
 
-```
+```python
 >>> import pymongo
 ```
 
@@ -41,13 +41,13 @@ The first step when working with **PyMongo** is to create a MongoClient to the r
 ```
 The above code will connect on the default host and port. We can also specify the host and port explicitly, as follows:
 
-```
+```python
 >>> client = MongoClient('localhost', 27017)
 ```
 
 Or use the MongoDB URI format:
 
-```
+```python
 >>> client = MongoClient('mongodb://localhost:27017/')
 ```
 
@@ -60,20 +60,20 @@ A single instance of MongoDB can support multiple independent databases. When wo
 
 If your database name is such that using attribute style access won’t work (like test-database), you can use dictionary style access instead:
 
-```
+```python
 >>> db = client['test-database']
 ```
 
 ## Getting a Collection
 A collection is a group of documents stored in MongoDB, and can be thought of as roughly the equivalent of a table in a relational database. Getting a collection in PyMongo works the same as getting a database:
 
-```
+```python
 >>> collection = db.test_collection
 ```
 
 or (using dictionary style access):
 
-```
+```python
 >>> collection = db['test-collection']
 ```
 
@@ -82,7 +82,7 @@ An important note about collections (and databases) in MongoDB is that they are 
 ## Documents
 Data in MongoDB is represented (and stored) using JSON-style documents. In PyMongo we use dictionaries to represent documents. As an example, the following dictionary might be used to represent a blog post:
 
-```
+```python
 >>> import datetime
 >>> post = {"author": "Mike",
 ...         "text": "My first blog post!",
@@ -95,7 +95,7 @@ Note that documents can contain native Python types (like `datetime.datetime` in
 ## Inserting a Document
 To insert a document into a collection we can use the `insert_one()` method:
 
-```
+```python
 >>> posts = db.posts
 >>> post_id = posts.insert_one(post).inserted_id
 >>> post_id
@@ -108,7 +108,7 @@ When a document is inserted a special key, `"_id"`, is automatically added if th
 
 After inserting the first document, the posts collection has actually been created on the server. We can verify this by listing all of the collections in our database:
 
-```
+```python
 >>> db.collection_names(include_system_collections=False)
 [u'posts']
 ```
@@ -116,7 +116,7 @@ After inserting the first document, the posts collection has actually been creat
 ## Getting a Single Document With **find_one()**
 The most basic type of query that can be performed in MongoDB is find_one(). This method returns a single document matching a query (or None if there are no matches). It is useful when you know there is only one matching document, or are only interested in the first match. Here we use find_one() to get the first document from the posts collection:
 
-```
+```python
 >>> import pprint
 >>> pprint.pprint(posts.find_one())
 {u'_id': ObjectId('...'),
@@ -131,7 +131,7 @@ The result is a dictionary matching the one that we inserted previously.
 
 `find_one()` also supports querying on specific elements that the resulting document must match. To limit our results to a document with author “Mike” we do:
 
-```
+```python
 >>> pprint.pprint(posts.find_one({"author": "Mike"}))
 {u'_id': ObjectId('...'),
  u'author': u'Mike',
@@ -141,14 +141,15 @@ The result is a dictionary matching the one that we inserted previously.
  ```
 If we try with a different author, like “Eliot”, we’ll get no result:
 
-```
+```python
 >>> posts.find_one({"author": "Eliot"})
 ```
 
 
 ## Querying By ObjectId
 We can also find a post by its _id, which in our example is an ObjectId:
-```
+
+```python
 >>> post_id
 ObjectId(...)
 >>> pprint.pprint(posts.find_one({"_id": post_id}))
@@ -158,9 +159,10 @@ ObjectId(...)
  u'tags': [u'mongodb', u'python', u'pymongo'],
  u'text': u'My first blog post!'}
  ```
+ 
 Note that an ObjectId is not the same as its string representation:
 
-```
+```python
 >>> post_id_as_str = str(post_id)
 >>> posts.find_one({"_id": post_id_as_str}) # No result
 >>>
@@ -172,7 +174,7 @@ Note that an ObjectId is not the same as its string representation:
 
 This is faster and more straightforward than calling `.insert_one()` multiple times. The call to `.insert_many()` takes an iterable of documents and inserts them into the tutorial collection in your rptutorials database.
 
-```
+```python
 >>> post_2 = {"author": "Leo",
         "text": "Fasting 14-10",
         "tags": ["python", "pymongo", "django"],
