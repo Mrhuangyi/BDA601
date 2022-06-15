@@ -230,7 +230,7 @@ The `$group` stage has the following prototype form:
 The `_id` and the **accumulator operators** can accept any valid `expression`.
 
 ![](assets/carbon%20(8).png)
-![](assets/carbon%20(4).png)
+![](assets/carbon%20(9).png)
 Since in your example the expression is 1, it will aggregate a value of one for each document in the group, thus yielding the total number of documents per group.
 ![](assets/carbon%20(7).png)
 ## $sort (aggregation)
