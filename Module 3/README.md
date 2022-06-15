@@ -6,6 +6,7 @@ According to the collection of needs for data science, artificial intelligence (
 
 <p align="center">
 <img src="assets/qed.jpg"/>
+
 Figure 1. Rogati, M. (2017). Data Science—Hierarchy of Needs. Retrieved from https://hackernoon.com/hn-images/1*7IMev5xslc9FLxr9hHhpFw.png
 </p>
 
