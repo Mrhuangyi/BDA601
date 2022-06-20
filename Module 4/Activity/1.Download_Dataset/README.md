@@ -1,9 +1,10 @@
 # Step 1:
-Go to the url below :
+Open to the following link:
+
 http://dev.cityofchicago.org/open%20data/data%20portal/2020/07/21/traffic-crash-data-source.html
 
 # Step 2:
-Click on one the links in the red box
+For each dataset Click on the link in the red box (You have to download all three datasets in the image)
 
 <p align="center">
 <img src="assets/img.png">

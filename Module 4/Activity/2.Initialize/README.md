@@ -1,8 +1,8 @@
 ## Step 1:
 open your **Jupyter lab** from **Anaconda Navigator** or **Start menu**: 
 <p align="center">
-<img src="assets/img.png" height="300" width="200">
-<img src="assets/img_1.png" height="300" width="200">
+<img src="assets/img.png" height="300" width="300">
+<img src="assets/img_1.png" height="300" width="300">
 </p>
 
 
@@ -49,7 +49,7 @@ Go back to "Crashes" Folder then create a new ipykernel file:
 rename the file to "main" by click on the "Untitled" above the page.
 
 ## Step 6
-Finally you'll have the file structure like this : 
+Finally you'll have the following file structure : 
 ```
 Crashes
 │   main.ipynb 
