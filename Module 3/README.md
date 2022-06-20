@@ -20,7 +20,7 @@ Thus, in a big data project, the essential first step is to identify the data so
 - The principles and guidelines to follow when developing a data lake; and
 - The principles and techniques of data ingestion.
 
-## data pipeline
+## Data pipeline
 A Data Pipeline is a series of processes that collects raw data from various sources, filters the disqualified data, transforms them into the appropriate format, moves them to the places you want to store them, analyzes them, and finally presents them to your audience.
 
 ![img.png](img.png)
