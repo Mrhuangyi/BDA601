@@ -61,4 +61,7 @@ Streaming pipelines deal with continuous sources of data, such as:
 IoT devices reading meters from self-driving vehicles.
 Security cameras report the number of people going through the gate.
 A software agent collects CPU usage data and sends it back to the monitoring server.
-The most famous streaming platform may be Apache Kafka. Kafka is able to handle trillions of events a day. Events are instances that happened at a certain time. A series of events make up a Topic. You can subscribe to a Topic to get messages when an event of that topic occurs. 
+The most famous streaming platform may be Apache Kafka. Kafka is able to handle trillions of events a day. Events are instances that happened at a certain time. A series of events make up a Topic. You can subscribe to a Topic to get messages when an event of that topic occurs.
+
+## Sources
+https://canonical.com/blog/data-pipelines-overview
