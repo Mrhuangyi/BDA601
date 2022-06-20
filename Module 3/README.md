@@ -93,5 +93,7 @@ The most famous streaming platform may be Apache Kafka. Kafka is able to handle 
 
 ## Sources
 https://canonical.com/blog/data-pipelines-overview
+
 https://www.ibm.com/cloud/blog/structured-vs-unstructured-data
+
 https://www.datamation.com/big-data/structured-vs-unstructured-data/
