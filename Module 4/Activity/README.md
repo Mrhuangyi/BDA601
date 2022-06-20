@@ -1,10 +1,10 @@
 ## Learning Activity 1: Working with DataFrame and Functions in PySpark
 
-1. [Download Traffic Crash Dataset]('1.Download_Dataset/README.md')
+1. [Download Traffic Crash Dataset](1.Download_Dataset/README.md)
 
-2. [Initialize File structure]('2.Initialize/README.md')
+2. [Initialize File structure](2.Initialize/README.md)
    
-3. [Install Pyspark]('3.Install_Pyspark/README.md')
+3. [Install Pyspark](3.Install_Pyspark/README.md)
 
 In Jupyter Notebook, using PySpark, perform the following:
 
