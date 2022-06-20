@@ -20,6 +20,17 @@ Thus, in a big data project, the essential first step is to identify the data so
 - The principles and guidelines to follow when developing a data lake; and
 - The principles and techniques of data ingestion.
 
+## INTERNAL VS. EXTERNAL DATA
+
+**Internal data** is information generated from within the business, covering areas such as operations, maintenance, personnel, and finance. 
+
+**External data** comes from the market, including customers and competitors. It’s things like statistics from surveys, questionnaires, research, and customer feedback.
+
+Research has shown that business analysts consider data generated internally to be more valuable. According to one survey, “About 65% of respondents rank internal data as more important than data collected outside the company.”
+
+Both kinds of data are helpful. Internal data helps you run your business and optimize your operations. External data helps you better understand your customer base and the competitive landscape. You need a clear view of both to have truly insightful business intelligence.
+
+
 ## What Is Structured Data?
 Structured data usually resides in relational databases (RDBMS). Fields store length-delineated data like phone numbers, Social Security numbers, or ZIP codes. Records even contain text strings of variable length like names, making it a simple matter to search. Data may be human- or machine-generated, as long as the data is created within an RDBMS structure. This format is eminently searchable, both with human-generated queries and via algorithms using types of data and field names, such as alphabetical or numeric, currency, or date.
 
@@ -97,3 +108,5 @@ https://canonical.com/blog/data-pipelines-overview
 https://www.ibm.com/cloud/blog/structured-vs-unstructured-data
 
 https://www.datamation.com/big-data/structured-vs-unstructured-data/
+
+https://worthwhile.com/insights/2017/02/20/data-business-intelligence/
