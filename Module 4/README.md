@@ -12,7 +12,7 @@ Apache Spark is built around a distributed collection of immutable Java Virtual 
 
 **RDD** transformation operations are _lazy_ in a sense that they do not compute their results immediately. The transformations are only computed when an action is executed and the results need to be returned to the driver.
 
-At the same time, RDDs expose some coarse-grained transformations (such as map(...), reduce(...), and filter(...) which we will cover in greater detail in Chapter 2, Resilient Distributed Datasets)
+At the same time, RDDs expose some coarse-grained transformations (such as map(...), reduce(...), and filter(...)
 ## DataFrames
 
 DataFrames, like RDDs, are immutable collections of data distributed among the nodes in a cluster. However, unlike RDDs, in DataFrames data is organized into named columns.
