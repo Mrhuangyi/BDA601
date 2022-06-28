@@ -8,6 +8,31 @@
 
 In Jupyter Notebook, using PySpark, perform the following:
 
+- ## Create SparkSession 
+Use the following code:
+```python
+#import necessary packages
+from pyspark.sql import SparkSession
+
+#create spark context
+sqlCtx = SparkSession.builder.getOrCreate()
+```
+instead of : 
+```python
+from pyspark.sql import SQLContext
+from pyspark import SparkContext
+
+#create spark context
+sc = SparkContext.getOrCreate()
+sqlCtx = SQLContext(sc)
+```
+### What is SparkSession
+SparkSession is an entry point to underlying Spark functionality in order to programmatically create Spark RDD, DataFrame and DataSet. It’s object “spark” is default available in spark-shell and it can be created programmatically using SparkSession builder pattern.
+
+### What is SQLContext
+Spark SQLContext is defined in org.apache.spark.sql package since 1.0 and is deprecated in 2.0 and replaced with SparkSession. SQLContext contains several useful functions of Spark SQL to work with structured data (columns & rows) and it is an entry point to Spark SQL.
+
+
 - ## Load the data from the csv files into DataFrames.
 
 ### Step 1:
