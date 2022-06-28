@@ -6,6 +6,8 @@
    
 3. [Install Pyspark](3.Install_Pyspark/README.md)
 
+4. [Install Java](https://www.geeksforgeeks.org/how-to-download-and-install-java-for-64-bit-machine/)
+
 In Jupyter Notebook, using PySpark, perform the following:
 
 - ## Create SparkSession 
