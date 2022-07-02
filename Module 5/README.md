@@ -14,3 +14,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 <p align="center">
 <img src="assets/img.png">
 </p>
+
+### Initialize 
+create the "Bank_Dataset" folder like previous module : "Crash_Dataset"
+and put the .csv file you already download to the folder named "data"
