@@ -22,6 +22,7 @@ Module_7
     │   adult_ch6_training
     │   adult_ch6_test
 ```
+
 ### perform the following tasks using PySpark:
 
 - Use the training dataset to create a decision tree model (Model 1) to predict a customer’s Income using Marital Status and Capital Gains and Losses; 
@@ -30,3 +31,25 @@ Module_7
 - Use the test data set to evaluate Model 2. Construct a contingency table to compare the actual and predicted values for Income; 
 - Compare Model 1 and Model 2 in terms of accuracy, precision, recall and the F1 scores. After you have compared the models, present all of your key observations in the ‘Model Evaluation’ discussion forum in your own words; and 
 - Read other students’ submissions and provide feedback.
+
+### ROC 
+
+A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. The method was originally developed for operators of military radar receivers starting in 1941, which led to its name. [wikipedia](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+
+<p align="center">
+<img src="assets/Roc_curve.svg.png">
+</p>
+
+The ROC curve is created by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The true-positive rate is also known as sensitivity, recall or probability of detection.[9] The false-positive rate is also known as probability of false alarm[9] and can be calculated as (1 − specificity). It can also be thought of as a plot of the power as a function of the Type I Error of the decision rule (when the performance is calculated from just a sample of the population, it can be thought of as estimators of these quantities).
+
+<p align="center">
+<img src="assets/ROC_1.png">
+</p>
+
+<p align="center">
+<img src="assets/ROC_2.png">
+</p>
+
+<p align="center">
+<img src="assets/ROC_3.png">
+</p>
