@@ -5,7 +5,8 @@ In this activity, you will develop a predictive model using a dataset.
 
 Using the Boston House-price dataset available at the URL provided below, perform the following tasks using PySpark: 
 
-Boston Housing dataset https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html
+D
+https://github.com/selva86/datasets
 
 
 - Compute the pairwise **correlations of the variables**; 
